@@ -3,9 +3,9 @@ from calculator import Shape
 
 class Rectangle(Shape):
     def __init__(self, shape_type, width, height):
+        super().__init__(shape_type)
         self.width = width
         self.height = height
-        super().__init__(shape_type)
 
     def get_area(self):
         return self.width * self.height

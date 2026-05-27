@@ -9,4 +9,4 @@ class Shape:
         pass
     
     def __str__(self):
-        return f"Shape: {self.shape_type} | Area: | Perimeter"
+        return f"Shape: {self.shape_type} | Area = {self.get_area()} | Perimeter = {self.get_perimeter()}"
