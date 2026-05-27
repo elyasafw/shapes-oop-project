@@ -3,8 +3,9 @@ from math import sqrt
 
 
 class Hexagon(Shape):
-    def __init__(self, shape_type, side):
-        super().__init__(shape_type)
+    def __init__(self, side):
+        self.valid_parameters(side)
+        super().__init__()
         self.side = side
 
     def get_area(self):

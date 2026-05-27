@@ -3,12 +3,13 @@ from math import pi
 
 
 class Circle(Shape):
-    def __init__(self, shape_type, radius):
-        super().__init__(shape_type)
+    def __init__(self, radius):
+        self.valid_parameters(radius)
+        super().__init__()
         self.radius = radius
 
     def get_area(self):
-        return pi * self.radius
+        return pi * self.radius**2
     
     def get_perimeter(self):
         return 2 * pi * self.radius
