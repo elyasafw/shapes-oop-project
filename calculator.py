@@ -1,6 +1,6 @@
 class Shape:
-    def __init__(self):
-        pass
+    def __init__(self, shape_type):
+        self.shape_type = shape_type
 
     def get_area(self):
         pass
@@ -8,5 +8,5 @@ class Shape:
     def get_perimeter(self):
         pass
     
-    def __str__():
-        pass
+    def __str__(self):
+        return f"Shape: {self.shape_type} | Area: | Perimeter"

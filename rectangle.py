@@ -2,14 +2,16 @@ from calculator import Shape
 
 
 class Rectangle(Shape):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, shape_type, width, height):
+        self.width = width
+        self.height = height
+        super().__init__(shape_type)
 
     def get_area(self):
-        pass
+        return self.width * self.height
 
     def get_perimeter(self):
-        pass
+        return 2 * (self.width + self.height)
     
-    def __str__():
-        pass
+    def __str__(self):
+        return f"Shape: {self.shape_type} | Area = {self.get_area()} | Perimeter = {self.get_perimeter()}"
